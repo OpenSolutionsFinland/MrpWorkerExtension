@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report id="report_move_labels_extended" model="stock.move" name="stock.move.extended.label" string="Lot Label" xml="mrp_worker_extension/report/lot_move_label.xml" xsl="mrp_worker_extension/report/lot_move_label.xsl"/>
+    </data>
+</openerp>

@@ -1,1 +1,2 @@
 import mrp_worker_extension
+import stock_move_extension

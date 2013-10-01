@@ -25,7 +25,7 @@
     "author" : "Open Solutions Finland",
     "description" : """
 *** Manufacturing Worker Extension ***
-Simplifies 
+Simplifies partial manufacturing process
 ***********************************
     """,
     "website" : "http://www.opensolutions.fi",
@@ -34,7 +34,8 @@ Simplifies
     "init_xml" : [],
     "demo_xml" : [],
     "data" : [
-              'mrp_extension_view.xml'
+              'mrp_extension_view.xml',
+			  'mrp_extension_report.xml'
                     ],
     'test': [
              ],

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<openerp>
+   <data>
+	   <record model="ir.ui.view" id="mrp_extension_view">
+    		<field name="name">mrp.extension.form</field>
+    		<field name="model">stock.move</field>
+			<field name="arch" type="xml">
+                <form string="Quality Check" version="7.0">
+					<group string="Quality Check">
+						<field name="product_quality_text" string="Notes"/>
+						<field name="product_quality_weight" string="Weight"/>
+						<field name="inspected_by" string="Inspector"/>
+						<button name="onPrintLabelClicked" type="object" string="Print lot label"/>
+					</group>
+				</form>
+			</field>
+		</record>
+	</data>
+</openerp>
