@@ -88,7 +88,7 @@
                 <tr>
 			<td>
 				<para style="small">Pallet ID</para>
-				<para style="nospace"><b><xsl:value-of select="serial"/></b></para>			
+				<para style="small"><b><xsl:value-of select="serial"/></b></para>			
 			</td>
 			
 			<td><barCode><xsl:value-of select="code"/></barCode><para style="centered"><xsl:value-of select="code"/></para></td>

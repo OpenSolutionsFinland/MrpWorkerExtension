@@ -29,7 +29,7 @@ Simplifies partial manufacturing process
 ***********************************
     """,
     "website" : "http://www.opensolutions.fi",
-    "depends" : ["base","mrp","stock"],
+    "depends" : ["base","mrp","stock", "product_quality"],
     "category" : "Manufacturing",
     "init_xml" : [],
     "demo_xml" : [],

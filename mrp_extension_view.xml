@@ -6,11 +6,45 @@
     		<field name="model">stock.move</field>
 			<field name="arch" type="xml">
                 <form string="Quality Check" version="7.0">
-					<group string="Quality Check">
-						<field name="product_quality_text" string="Notes"/>
-						<field name="product_quality_weight" string="Weight"/>
-						<field name="inspected_by" string="Inspector"/>
+					<header>
 						<button name="onPrintLabelClicked" type="object" string="Print lot label"/>
+					</header>
+					<group string="Quality Check" colspan="3">
+						
+						<div colspan="2">
+							<label for="product_quality_text" string="Notes" />
+							<field name="product_quality_text" readonly="True"/>
+						</div>
+						<newline/>
+						<div class="oe_inline" style="float: left;">
+							<div class="oe_inline" style="float: left;">
+								<label for="product_quality_weight" string="Weights" />
+								<field name="product_quality_weight" string="Weight"/>
+							</div>
+							<div class="oe_inline" style="float: left;">	
+								<label for="product_quality_lower_limit" string="Lower" />
+								<field name="product_quality_lower_limit"/>						
+							</div>
+							<div class="oe_inline" style="float: left;">
+								<label for="product_quality_upper_limit" string="Upper" />
+								<field name="product_quality_upper_limit"/>
+							</div>
+						</div>
+						<newline/>
+						<div groups="stock.group_production_lot">
+							<label for="lot_serial" string="Serial" />
+							<field name="lot_serial"/>
+                        </div>
+						<newline/>
+						<div>
+							<label for="inspection_notes" string="Inspection notes" />
+							<field name="inspection_notes"/>
+						</div>
+						<newline/>
+						<div>
+							<label for="inspected_by" string="Inspector" />
+							<field name="inspected_by"/>
+						</div>
 					</group>
 				</form>
 			</field>
