@@ -31,7 +31,7 @@
 							</div>
 						</div>
 						<newline/>
-						<div groups="stock.group_production_lot">
+						<div>
 							<label for="lot_serial" string="Serial" />
 							<field name="lot_serial"/>
                         </div>
