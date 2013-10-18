@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
 	<xsl:variable name="initial_bottom_pos">-5</xsl:variable>
 	<xsl:variable name="initial_left_pos">6</xsl:variable>
-	<xsl:variable name="height_increment">5.8</xsl:variable>
+	<xsl:variable name="height_increment">7</xsl:variable>
 	<xsl:variable name="width_increment">9</xsl:variable>
 	<xsl:variable name="frame_height">15cm</xsl:variable>
 	<xsl:variable name="frame_width">10cm</xsl:variable>
@@ -91,7 +91,7 @@
 				<para style="small"><b><xsl:value-of select="serial"/></b></para>			
 			</td>
 			
-			<td><para style="centered"><barCode xdim="5cm" ratio="4.0" height="1cm"><xsl:value-of select="code"/></barCode></para><para style="centered"><xsl:value-of select="code"/></para></td>
+			<td><barCode xdim="5cm" ratio="4.0" height="1cm"><xsl:value-of select="code"/></barCode><para style="small"><xsl:value-of select="code"/></para></td>
 		</tr>
 		<tr> 
 			<td>
