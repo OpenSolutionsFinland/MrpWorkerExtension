@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
 	<xsl:variable name="initial_bottom_pos">-3</xsl:variable>
-	<xsl:variable name="initial_left_pos">4.5</xsl:variable>
+	<xsl:variable name="initial_left_pos">5</xsl:variable>
 	<xsl:variable name="height_increment">8</xsl:variable>
 	<xsl:variable name="width_increment">9</xsl:variable>
 	<xsl:variable name="frame_height">15cm</xsl:variable>
@@ -46,13 +46,13 @@
 					<xsl:value-of select="$frame_height"/>
 				</xsl:attribute>
 				<xsl:attribute name="x1">
-					5
+					<xsl:value-of select="$initial_left_pos"/>
 					<!-- <xsl:value-of select="$initial_left_pos + ((position()-1) mod $number_columns) * $width_increment"/>-->
 					<xsl:text>cm</xsl:text>
 				
 				</xsl:attribute>
 				<xsl:attribute name="y1">
-					1
+					<xsl:value-of select="$initial_bottom_pos"/>
 					<!-- <xsl:value-of select="$initial_bottom_pos - floor((position()-1) div $number_columns) * $height_increment"/>-->
 					<xsl:text>cm</xsl:text>
 				</xsl:attribute>
