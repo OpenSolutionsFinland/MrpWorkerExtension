@@ -24,11 +24,11 @@
 				</pageTemplate>
 			</template>
 			<stylesheet>
-				<paraStyle name="nospace" fontName="Courier" fontSize="14" spaceBefore="0" spaceAfter="0.1cm" />
-				<paraStyle name="small" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0"/>
-				<paraStyle name="centered" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0" alignment="center"/>
-				<paraStyle name="ncentered" fontName="Courier" fontSize="14" spaceBefore="0" spaceAfter="0" alignment="center"/>
-				<paraStyle name="right" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0" alignment="right"/>
+				<paraStyle name="nospace" fontName="Courier" fontSize="25" spaceBefore="0" spaceAfter="0.1cm" />
+				<paraStyle name="small" fontName="Courier" fontSize="15" spaceBefore="0" spaceAfter="0"/>
+				<paraStyle name="centered" fontName="Courier" fontSize="15" spaceBefore="0" spaceAfter="0" alignment="center"/>
+				<paraStyle name="ncentered" fontName="Courier" fontSize="25" spaceBefore="0" spaceAfter="0" alignment="center"/>
+				<paraStyle name="right" fontName="Courier" fontSize="15" spaceBefore="0" spaceAfter="0" alignment="right"/>
 			</stylesheet>
 			<story>
 				<xsl:apply-templates select="lot-line" mode="story"/>
@@ -76,7 +76,7 @@
 
         	</stylesheet>
 
-		<blockTable style="labelTable" colWidths="2.8cm,5.4cm,2.8cm">
+		<blockTable style="labelTable" colWidths="6cm,6cm,6cm">
 		<tr>
 			<td><para style="small"><xsl:value-of select="company"/></para></td>
 			<td><para style="centered"><xsl:value-of select="creationdate"/></para></td>
