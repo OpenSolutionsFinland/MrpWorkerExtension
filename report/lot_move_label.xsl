@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
-	<xsl:variable name="initial_bottom_pos">22.5</xsl:variable>
-	<xsl:variable name="initial_left_pos">1</xsl:variable>
+	<xsl:variable name="initial_bottom_pos">3</xsl:variable>
+	<xsl:variable name="initial_left_pos">4</xsl:variable>
 	<xsl:variable name="height_increment">3.8</xsl:variable>
-	<xsl:variable name="width_increment">7</xsl:variable>
+	<xsl:variable name="width_increment">9</xsl:variable>
 	<xsl:variable name="frame_height">7cm</xsl:variable>
 	<xsl:variable name="frame_width">6cm</xsl:variable>
 	<xsl:variable name="number_columns">3</xsl:variable>
@@ -122,6 +122,6 @@
 		
 		-->
 		</blockTable>
-		<nextFrame/>
+		<!-- <nextFrame/>-->
 	</xsl:template>
 </xsl:stylesheet>
