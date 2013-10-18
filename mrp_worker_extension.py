@@ -7,8 +7,9 @@ class mrp_worker_extension(osv.osv_memory):
     _inherit='mrp.product.produce'
     
     _columns={
-        'produced_qty': fields.float('Produced Quantity', digits_compute=dp.get_precision('Product Unit of Measure'), required=True),
+        'produced_qty': fields.float('Produced Quantity', digits_compute=dp.get_precision('Product Unit of Measure'), required=False),
     }
+    
     def _get_produced_qty(self, cr, uid, context=None):
         if context is None:
             context = {}
