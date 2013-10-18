@@ -7,17 +7,6 @@ class mrp_worker_extension(osv.osv_memory):
 	_columns= {
 	    'produced_qty': fields.float('Produced Quantity', digits_compute=dp.get_precision('Product Unit of Measure'), required=False)
     }
-    def _get_produced_qty(self, cr, uid, context=None):
-	    if context is None:
-		    context = {}
-        prod = self.pool.get('mrp.production').browse(cr, uid, context['active_id'], context=context)
-        done = 0.0
-        for move in prod.move_created_ids:
-		    if move.product_id == prod.product_id:
-			    if not move.scrapped:
-				    done += move.product_qty
-				    
-        return prod.product_qty - done
 	
 	def _get_product_qty(self, cr, uid, context=None):
 
@@ -56,7 +45,7 @@ class mrp_worker_extension(osv.osv_memory):
 		}
 	_defaults = {
 		'product_qty': _get_product_qty,
-		'produced_qty': _get_produced_qty
+		'produced_qty': 0.0#_get_produced_qty
 	}
 
 mrp_worker_extension()
