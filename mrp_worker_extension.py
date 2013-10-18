@@ -12,8 +12,9 @@ class mrp_worker_extension(osv.osv_memory):
     
     def _get_produced_qty(self, cr, uid, context=None):
         if context is None:
+            print 'context none'
             context = {}
-        prod = self.pool.get('mrp.production').browse(cr, uid, context['active_id'], context=context)
+        prod = self.pool.get('mrp.production').browse(cr, uid, [], context=context)
         done = 0.0
         for move in prod.move_created_ids:
             if move.product_id == prod.product_id:
