@@ -91,7 +91,7 @@
 				<para style="small"><b><xsl:value-of select="serial"/></b></para>			
 			</td>
 			
-			<td><barCode xdim="5cm"><xsl:value-of select="code"/></barCode><para style="centered"><xsl:value-of select="code"/></para></td>
+			<td><barCode xdim="3cm"><xsl:value-of select="code"/></barCode><para style="centered"><xsl:value-of select="code"/></para></td>
 		</tr>
 		<tr> 
 			<td>
