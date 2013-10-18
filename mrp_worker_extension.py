@@ -4,11 +4,7 @@ import openerp.addons.decimal_precision as dp
 class mrp_worker_extension(osv.osv_memory):
 	_name='mrp.product.produce'
 	_inherit='mrp.product.produce'
-		
-	_columns= {
-	    'produced_qty': fields.float('Produced Quantity', digits_compute=dp.get_precision('Product Unit of Measure'), required=False)
-    }
-    
+
     def _get_produced_qty(self, cr, uid, context=None):
         return 0.0
 	
@@ -49,7 +45,7 @@ class mrp_worker_extension(osv.osv_memory):
 		}
 	_defaults = {
 		'product_qty': _get_product_qty,
-		'produced_qty': _get_produced_qty
+		#'produced_qty': _get_produced_qty
 	}
 
 mrp_worker_extension()
