@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
-	<xsl:variable name="initial_bottom_pos">1</xsl:variable>
+	<xsl:variable name="initial_bottom_pos">-3</xsl:variable>
 	<xsl:variable name="initial_left_pos">6</xsl:variable>
 	<xsl:variable name="height_increment">5.8</xsl:variable>
 	<xsl:variable name="width_increment">9</xsl:variable>
