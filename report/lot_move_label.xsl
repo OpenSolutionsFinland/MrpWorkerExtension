@@ -24,7 +24,7 @@
 				</pageTemplate>
 			</template>
 			<stylesheet>
-				<paraStyle name="nospace" fontName="Courier" fontSize="15" spaceBefore="0"  />
+				<paraStyle name="nospace" fontName="Courier" fontSize="15" spaceBefore="0" spaceAfter="0.1cm" />
 				<paraStyle name="small" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0"/>
 				<paraStyle name="centered" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0" alignment="center"/>
 				<paraStyle name="ncentered" fontName="Courier" fontSize="15" spaceBefore="0" spaceAfter="0" alignment="center"/>
