@@ -72,7 +72,7 @@
 
         	</stylesheet>
 
-		<blockTable style="labelTable">
+		<blockTable style="labelTable" colWidths="2.8cm,5.4cm,2.8cm">
 		<tr>
 			<td><para style="small"><xsl:value-of select="company"/></para></td>
 			<td><para style="centered"><xsl:value-of select="creationdate"/></para></td>
