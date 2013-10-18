@@ -27,6 +27,7 @@
 				<paraStyle name="nospace" fontName="Courier" fontSize="15" spaceBefore="0" spaceAfter="0" />
 				<paraStyle name="small" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0"/>
 				<paraStyle name="centered" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0" alignment="center"/>
+				<paraStyle name="ncentered" fontName="Courier" fontSize="15" spaceBefore="0" spaceAfter="0" alignment="center"/>
 				<paraStyle name="right" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0" alignment="right"/>
 			</stylesheet>
 			<story>
@@ -99,8 +100,8 @@
 				<para style="nospace"><b><xsl:value-of select="quantity"/></b></para>
 			</td>
 			<td>
-				<para style="small">Pallet Qty</para>
-				<para style="nospace"><b><xsl:value-of select="quantity"/></b></para>
+				<para style="centered">Pallet Qty</para>
+				<para style="ncentered"><b><xsl:value-of select="quantity"/></b></para>
 			</td>
 			<td>
 				<para style="small">Final Inspection by</para>
