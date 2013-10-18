@@ -52,7 +52,7 @@
 				
 				</xsl:attribute>
 				<xsl:attribute name="y1">
-					1
+					-1
 					<!-- <xsl:value-of select="$initial_bottom_pos - floor((position()-1) div $number_columns) * $height_increment"/>-->
 					<xsl:text>cm</xsl:text>
 				</xsl:attribute>
