@@ -97,7 +97,7 @@
 			
 			<td>
 				
-				<barCode xdim="1cm" ratio="2.2" height="2cm" width="4cm"><xsl:value-of select="code"/></barCode>
+				<barCode xdim="1cm" ratio="2.2" height="2cm"><xsl:value-of select="code"/></barCode>
 				<para style="centered"><xsl:value-of select="code"/></para></td>
 		</tr>
 		<tr> 

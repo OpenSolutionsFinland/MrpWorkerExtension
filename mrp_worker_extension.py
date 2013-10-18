@@ -12,6 +12,7 @@ class mrp_worker_extension(osv.osv_memory):
     
     def _get_produced_qty(self, cr, uid, context=None):
         print '_get_produced_qty()'
+        print 'context ' + str(context)
         done = 0.0
         return done
         
