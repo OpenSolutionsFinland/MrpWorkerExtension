@@ -24,10 +24,10 @@
 				</pageTemplate>
 			</template>
 			<stylesheet>
-				<paraStyle name="nospace" fontName="Courier" fontSize="10" spaceBefore="0" spaceAfter="0" />
-				<paraStyle name="small" fontName="Courier" fontSize="7" spaceBefore="0" spaceAfter="0"/>
-				<paraStyle name="centered" fontName="Courier" fontSize="7" spaceBefore="0" spaceAfter="0" alignment="center"/>
-				<paraStyle name="right" fontName="Courier" fontSize="7" spaceBefore="0" spaceAfter="0" alignment="right"/>
+				<paraStyle name="nospace" fontName="Courier" fontSize="15" spaceBefore="0" spaceAfter="0" />
+				<paraStyle name="small" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0"/>
+				<paraStyle name="centered" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0" alignment="center"/>
+				<paraStyle name="right" fontName="Courier" fontSize="11" spaceBefore="0" spaceAfter="0" alignment="right"/>
 			</stylesheet>
 			<story>
 				<xsl:apply-templates select="lot-line" mode="story"/>
@@ -62,7 +62,7 @@
 
             		<blockTableStyle id="labelTable">
 
-                		<blockFont name="Helvetica-BoldOblique" size="12" start="0,0" stop="-1,0"/>
+                		<blockFont name="Helvetica-BoldOblique" size="15" start="0,0" stop="-1,0"/>
                 		<lineStyle kind="BOX" colorName="black" start="0,0" stop="-1,0"/>
 
                 		<lineStyle kind="BOX" colorName="black" start="0,0" stop="-1,-1"/>
@@ -91,7 +91,7 @@
 				<para style="small"><b><xsl:value-of select="serial"/></b></para>			
 			</td>
 			
-			<td><barCode xdim="5cm" ratio="4.0" height="1cm"><xsl:value-of select="code"/></barCode><para style="centered"><xsl:value-of select="code"/></para></td>
+			<td><para style="centered"><barCode xdim="5cm" ratio="4.0" height="1cm"><xsl:value-of select="code"/></barCode></para><para style="centered"><xsl:value-of select="code"/></para></td>
 		</tr>
 		<tr> 
 			<td>
