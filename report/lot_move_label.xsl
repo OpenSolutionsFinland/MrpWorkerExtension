@@ -5,7 +5,7 @@
 	<xsl:variable name="height_increment">8</xsl:variable>
 	<xsl:variable name="width_increment">9</xsl:variable>
 	<xsl:variable name="frame_height">15cm</xsl:variable>
-	<xsl:variable name="frame_width">18cm</xsl:variable>
+	<xsl:variable name="frame_width">20cm</xsl:variable>
 	<xsl:variable name="number_columns">3</xsl:variable>
 	<xsl:variable name="max_frames">21</xsl:variable>
 	
