@@ -46,11 +46,14 @@
 					<xsl:value-of select="$frame_height"/>
 				</xsl:attribute>
 				<xsl:attribute name="x1">
-					<xsl:value-of select="$initial_left_pos + ((position()-1) mod $number_columns) * $width_increment"/>
+					5
+					<!-- <xsl:value-of select="$initial_left_pos + ((position()-1) mod $number_columns) * $width_increment"/>-->
 					<xsl:text>cm</xsl:text>
+				
 				</xsl:attribute>
 				<xsl:attribute name="y1">
-					<xsl:value-of select="$initial_bottom_pos - floor((position()-1) div $number_columns) * $height_increment"/>
+					1
+					<!-- <xsl:value-of select="$initial_bottom_pos - floor((position()-1) div $number_columns) * $height_increment"/>-->
 					<xsl:text>cm</xsl:text>
 				</xsl:attribute>
 			</frame>
@@ -92,7 +95,9 @@
 				<para style="small"><b><xsl:value-of select="serial"/></b></para>			
 			</td>
 			
-			<td style="centered"><barCode xdim="1cm" ratio="2.2" height="2cm" alignment="center"><xsl:value-of select="code"/></barCode><para style="centered"><xsl:value-of select="code"/></para></td>
+			<td>
+				<barCode xdim="1cm" ratio="2.2" height="2cm" alignment="center"><xsl:value-of select="code"/></barCode>
+				<para style="centered"><xsl:value-of select="code"/></para></td>
 		</tr>
 		<tr> 
 			<td>
