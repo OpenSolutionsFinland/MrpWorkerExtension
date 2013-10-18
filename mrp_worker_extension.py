@@ -21,7 +21,8 @@ class mrp_worker_extension(osv.osv_memory):
         return done
         
     def _get_product_qty(self, cr, uid, context=None):
-        
+        if context:
+            print context.get('active_id')
         if context is None:
             context = {}
         prod = self.pool.get('mrp.production').browse(cr, uid, context['active_id'], context=context)
