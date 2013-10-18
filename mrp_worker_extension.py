@@ -2,11 +2,8 @@ from osv import fields, osv
 import openerp.addons.decimal_precision as dp
 
 class mrp_worker_extension(osv.osv_memory):
-	_name='mrp.product.produce'
+    _name='mrp.product.produce'
 	_inherit='mrp.product.produce'
-
-    def _get_produced_qty(self, cr, uid, context=None):
-        return 0.0
 	
 	def _get_product_qty(self, cr, uid, context=None):
 
