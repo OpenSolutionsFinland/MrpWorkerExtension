@@ -16,9 +16,10 @@ class mrp_worker_extension(osv.osv_memory):
         if context is None:
             print 'context none'
             context = {}
-            prod = self.pool.get('mrp.production').browse(cr, uid, [], context=context)
-        else:
-            prod = self.pool.get('mrp.production').browse(cr, uid, context['active_id'], context=context)
+        
+        prod = self.pool.get('mrp.production').browse(cr, uid, [], context=context)
+        #else:
+        #    prod = self.pool.get('mrp.production').browse(cr, uid, context['active_id'], context=context)
             
         done = 0.0
         for move in prod.move_created_ids:
